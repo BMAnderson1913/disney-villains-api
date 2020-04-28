@@ -1,6 +1,6 @@
 # Disney Villain API
 
-In this two part exrcise you are tasked with create a REST API for accessing Disney Villain data, complete with test suite.
+In this two part exercise you are tasked with create a REST API for accessing Disney Villain data, complete with test suite.
 
 ## Part One
 
