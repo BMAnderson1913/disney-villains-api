@@ -11,13 +11,13 @@ const getVillainBySlug = async (request, response) => {
   const { slug } = request.params
 
   const matchingVillain = await models.Villains.findOne({
-    where: { slug: slug.toLowerCase() },
+    where: { slug },
     attributes: ['name', 'movie', 'slug']
   })
 
   return matchingVillain
     ? response.status(200).send(matchingVillain)
-    : response.status(404).send('Sorry, that villain doesn\'t exist!')
+    : response.status(404).send('Sorry, that villain isn\'t listed, try another!')
 }
 
 const saveNewVillain = async (request, response) => {
