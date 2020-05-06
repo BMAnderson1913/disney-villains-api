@@ -7,7 +7,7 @@
     "dev": "./node_modules/.bin/nodemon index.js",
     "lint": "./node_modules/.bin/eslint --format codeframe .",
     "lint:fix": "./node_modules/.bin/eslint --fix --format codeframe .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha tests/**/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,12 @@
   },
   "homepage": "https://github.com/BMAnderson1913/disney-villains-api#readme",
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^6.8.0",
-    "nodemon": "^2.0.3"
+    "mocha": "^7.1.2",
+    "nodemon": "^2.0.3",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
